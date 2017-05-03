@@ -1,0 +1,25 @@
+version: "2.1"
+services:
+  bot-mongo:
+    image: mongo
+    ports:
+      - "27017:27017"
+#    links:
+#      - zookeeper
+#    environment:
+#      KAFKA_ADVERTISED_HOST_NAME: 172.16.0.163
+#      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+#  zookeeper:
+#    image: jeqo/apache-zookeeper:3.4.8
+#    ports:
+#      - "2181:2181"
+#      - "2888:2888"
+#      - "3888:3888"
+#  kproxy:
+#    image: atiwari/kafka-proxy
+#    ports:
+#      - "19091:19091"
+#      - "19092:19092"
+#    links:
+#      - zookeeper
+#      - kafka
